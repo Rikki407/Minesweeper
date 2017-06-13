@@ -1,0 +1,78 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:orientation="vertical"
+    android:id="@+id/layout"
+    android:weightSum="1"
+    android:background="@drawable/mines">
+
+    <Button
+        android:id="@+id/start"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="   START   "
+        android:onClick="sendMessage"
+        android:layout_below="@+id/gamelevel"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="54dp"
+        android:textSize="24sp"
+        android:padding="5dp"
+        android:paddingBottom="5dp"
+        android:paddingEnd="5dp"
+        android:paddingLeft="5dp"
+        android:paddingRight="5dp"
+        android:paddingStart="5dp"
+        android:paddingTop="5dp"
+        android:background="@android:drawable/editbox_dropdown_light_frame" />
+
+    <RadioGroup
+        android:id="@+id/gamelevel"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:textAlignment="center"
+
+        android:layout_centerVertical="true"
+        android:layout_alignLeft="@+id/start"
+        android:layout_alignStart="@+id/start">
+
+        <RadioButton
+            android:id="@+id/easy"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textSize="24sp"
+            android:text="EASY"
+            android:gravity="center_vertical"
+            android:textStyle="normal|bold"
+            android:fontFamily="monospace"
+            android:onClick="easy"
+            android:textColor="#FAD7A0"
+            android:checked="true"/>
+
+        <RadioButton
+            android:id="@+id/medium"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textSize="24sp"
+            android:text="MEDIUM"
+            android:textStyle="normal|bold"
+            android:fontFamily="monospace"
+            android:onClick="medium"
+            android:textColor="#FAD7A0" />
+
+        <RadioButton
+            android:id="@+id/hard"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textSize="24sp"
+            android:text="HARD"
+            android:textStyle="normal|bold"
+            android:fontFamily="monospace"
+            android:onClick="hard"
+            android:textColor="#FAD7A0" />
+
+    </RadioGroup>
+</RelativeLayout>
